@@ -16,11 +16,6 @@ Resources:
     LambdaRole:
       Type: AWS::IAM::Role
       Properties:
-        ManagedPolicyArns:
-          - !ImportValue LambdaPolicyDynamo
-          - !ImportValue LambdaPolicyEC2
-          - !ImportValue LambdaPolicyCW
-          - !ImportValue LambdaPolicyS3
         AssumeRolePolicyDocument:
           Version: 2012-10-17
           Statement:
